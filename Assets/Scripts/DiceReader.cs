@@ -41,6 +41,10 @@ public class DiceReader : MonoBehaviour
 
     void Start()
     {
+    QualitySettings.SetQualityLevel(0);
+    QualitySettings.vSyncCount = 0;
+    Application.targetFrameRate = 60;
+
         if (receiveButtonText != null)
             receiveButtonText.text = "Start Receiving";
     }
