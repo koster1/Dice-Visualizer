@@ -127,15 +127,15 @@ public class MovesenseDice : MonoBehaviour
     {
         Vector3[] dirs =
         {
-            new Vector3(0,0,1),
-            new Vector3(0,0,-1),
-            new Vector3(1,0,0),
-            new Vector3(-1,0,0),
-            new Vector3(0,1,0),
-            new Vector3(0,-1,0)
+            new Vector3(0,0,1), // 1
+            new Vector3(1,0,0), // 2
+            new Vector3(0,1,0), // 3
+            new Vector3(0,-1,0), // 4
+            new Vector3(-1,0,0), // 5
+            new Vector3(0,0,-1) // 6
         };
 
-        int[] faces = {1,6,2,5,3,4};
+        int[] faces = {1,2,3,4,5,6};
 
         float bestDot = -1;
         int bestFace = stableFace;
